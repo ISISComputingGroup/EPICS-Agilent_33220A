@@ -11,11 +11,11 @@ cd ${TOP}
 dbLoadDatabase "dbd/Agilent_33220A.dbd"
 Agilent_33220A_registerRecordDeviceDriver pdbbase
 
+lvDCOMConfigure("frontpanel", "frontpanel", "$(TOP)/Agilent_33220AApp/protocol/Agilent_33220A.xml", "ndxchipir", 6, "", "spudulike", "reliablebeam")
+
 ## Load record instances
-#dbLoadRecords("db/xxx.db","user=dpk62Host")
+dbLoadRecords("$(TOP)/db/Agilent_33220A.db","P=AG53220A:")
+
 
 cd ${TOP}/iocBoot/${IOC}
 iocInit
-
-## Start any sequence programs
-#seq sncxxx,"user=dpk62Host"
