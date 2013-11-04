@@ -14,14 +14,14 @@ DBD += Agilent_33220A.dbd
 
 # Agilent_33220A.dbd will be made up from these files:
 Agilent_33220A_DBD += base.dbd
-Agilent_33220A_DBD += lvDCOM.dbd
+Agilent_33220A_DBD += lvDCOM.dbd pvdump.dbd
 
 # Include dbd files from all support applications:
 Agilent_33220A_DBD += devIocStats.dbd
 
 # Add all the support libraries needed by this IOC
 #Agilent_33220A_LIBS += xxx
-Agilent_33220A_LIBS +=  lvDCOM asyn autosave devIocStats
+Agilent_33220A_LIBS +=  lvDCOMSupport pvdump asyn autosave devIocStats
 Agilent_33220A_SYS_LIBS_WIN32 += msxml2
 
 # Agilent_33220A_registerRecordDeviceDriver.cpp derives from Agilent_33220A.dbd
