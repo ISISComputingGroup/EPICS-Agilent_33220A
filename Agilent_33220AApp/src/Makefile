@@ -14,6 +14,7 @@ DBD += Agilent_33220A.dbd
 
 # Agilent_33220A.dbd will be made up from these files:
 Agilent_33220A_DBD += base.dbd
+Agilent_33220A_DBD += asyn.dbd
 Agilent_33220A_DBD += lvDCOM.dbd pvdump.dbd
 
 # Include dbd files from all support applications:
