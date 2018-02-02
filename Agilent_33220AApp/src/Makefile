@@ -22,7 +22,7 @@ Agilent_33220A_DBD += devIocStats.dbd
 
 # Add all the support libraries needed by this IOC
 #Agilent_33220A_LIBS += xxx
-Agilent_33220A_LIBS +=  lvDCOM pvdump asyn autosave devIocStats $(MYSQLLIB) easySQLite sqlite utilities
+Agilent_33220A_LIBS +=  lvDCOM pvdump asyn autosave devIocStats $(MYSQLLIB) easySQLite sqlite utilities pcrecpp pcre
 Agilent_33220A_SYS_LIBS_WIN32 += msxml2
 
 # Agilent_33220A_registerRecordDeviceDriver.cpp derives from Agilent_33220A.dbd
